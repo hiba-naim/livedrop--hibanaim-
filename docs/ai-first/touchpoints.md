@@ -68,8 +68,8 @@ User
 - Invalid/harmful query → “browse categories” suggestion.  
 
 **PII handling**  
-- Strip any accidental email, phone, or address tokens from query.  
-- Logs anonymized by prefix only.  
+- All inputs pass through a **redactor** that removes accidental PII (emails, phone numbers, addresses).  
+- Logs anonymized by prefix only (no raw user text stored).  
 
 **Success metrics**  
 - CTR = clicks / suggestions_shown.  
@@ -147,8 +147,8 @@ Batch Job (SKU + Original Copy + Specs)
 - Unsafe output → refuse and log.  
 
 **PII handling**  
-- No customer PII.  
-- Logs store SKU id + anonymized text hash.  
+- Input passes through a **redactor** even though no customer PII is expected (defense in depth).  
+- Logs store only SKU id + anonymized text hash.   
 
 **Success metrics**  
 - Engagement = (clicks_on_product_details / product_page_views).  
