@@ -13,5 +13,5 @@
 
 ### Why these two
 
-I selected **Search Typeahead** and **Smart Product Descriptions** because both improve **conversion** and **trust** while being technically feasible with strong guardrails. Typeahead boosts relevance at low latency with validators and fallbacks, and descriptions improve clarity and SEO using only existing product data. Both use simple guardrail layers (PII removal, validators, refusal to hallucinate) and human-in-the-loop reviews, keeping integration risk low.
+I chose Search Typeahead and Smart Product Descriptions because both can improve conversion and customer trust while being safe and practical to build. Typeahead makes search results more relevant and fast, with checks and backups if something fails. Smart descriptions make product pages clearer and help with SEO, using only the product data we already have. Both have simple safety steps (like removing sensitive info, validators, and human review if needed), so the risk of adding them is low.
 
