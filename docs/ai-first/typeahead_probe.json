@@ -1,0 +1,24 @@
+{
+  "input_prefix": "iph",
+  "steps": {
+    "pii_check": "OK",
+    "bad_word_check": "OK",
+    "cache_lookup": "MISS",
+    "vector_search_top5": [
+      "iPhone 14 Pro Max",
+      "iPhone 14 Case",
+      "iPhone Charger",
+      "iPhone Screen Protector",
+      "iPhone 13 Mini"
+    ],
+    "validator": "All SKUs exist in catalog",
+    "responder_output": [
+      "iPhone 14 Pro Max",
+      "iPhone 14 Case",
+      "iPhone Charger",
+      "iPhone Screen Protector",
+      "iPhone 13 Mini"
+    ]
+  },
+  "latency_ms": 248
+}
