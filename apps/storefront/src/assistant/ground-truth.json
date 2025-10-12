@@ -1,0 +1,32 @@
+[
+  {
+    "qid": "Q01",
+    "category": "Returns",
+    "question": "How do I return an item?",
+    "answer": "You can request a return within 14 days of delivery with your order ID. [Q01]"
+  },
+  {
+    "qid": "Q02",
+    "category": "Shipping",
+    "question": "How long does shipping take?",
+    "answer": "Orders ship within 1–2 business days and arrive in 3–5 days depending on location. [Q02]"
+  },
+  {
+    "qid": "Q03",
+    "category": "Payments",
+    "question": "What payment methods are accepted?",
+    "answer": "We accept Visa, MasterCard and PayPal. [Q03]"
+  },
+  {
+    "qid": "Q04",
+    "category": "Orders",
+    "question": "Where can I track my order?",
+    "answer": "Use your order ID on the Order Status page or ask 'Check order <id>'. [Q04]"
+  },
+  {
+    "qid": "Q05",
+    "category": "Support",
+    "question": "How can I contact support?",
+    "answer": "You can message us through the Ask Support panel anytime. [Q05]"
+  }
+]
