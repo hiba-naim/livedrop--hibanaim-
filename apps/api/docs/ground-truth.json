@@ -1,0 +1,37 @@
+[
+  {
+    "id": "Policy3.1",
+    "question": "What is your return policy?",
+    "answer": "Items can be returned within 30 days of purchase with the original receipt. Products must be unused and in their original packaging. Refunds are processed within 5–7 business days after we receive the item.",
+    "category": "returns",
+    "lastUpdated": "2025-10-01T00:00:00Z"
+  },
+  {
+    "id": "Shipping2.1",
+    "question": "What are your shipping options?",
+    "answer": "We offer Standard (5–7 days, $5.99), Express (2–3 days, $12.99), and Overnight ($24.99) shipping. Orders above $50 qualify for free standard shipping.",
+    "category": "shipping",
+    "lastUpdated": "2025-10-01T00:00:00Z"
+  },
+  {
+    "id": "Warranty1.1",
+    "question": "Do you offer warranties?",
+    "answer": "Yes! All electronic items include a one-year limited warranty covering manufacturer defects.",
+    "category": "warranty",
+    "lastUpdated": "2025-10-01T00:00:00Z"
+  },
+  {
+    "id": "Policy4.2",
+    "question": "What is your privacy policy?",
+    "answer": "We value your privacy. Customer data is securely stored and never shared with third parties without consent. You can read our full privacy policy on our website.",
+    "category": "privacy",
+    "lastUpdated": "2025-10-01T00:00:00Z"
+  },
+  {
+    "id": "Policy5.3",
+    "question": "Do you ship internationally?",
+    "answer": "Currently, we only ship within Lebanon, but international shipping will be available soon.",
+    "category": "shipping",
+    "lastUpdated": "2025-10-01T00:00:00Z"
+  }
+]

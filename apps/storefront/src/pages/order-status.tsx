@@ -1,34 +1,15 @@
-import { useParams } from "react-router-dom"
-import { getOrderStatus } from "../lib/api"
-import { useEffect, useState } from "react"
+import React from "react";
+import { useParams } from "react-router-dom";
+import OrderTracking from "../components/OrderTracking";
 
-export default function OrderStatus() {
-  const { id } = useParams()
-  const [status, setStatus] = useState<any>(null)
-
-  useEffect(() => {
-    if (id) getOrderStatus(id).then(setStatus)
-  }, [id])
-
-  if (!id) return <p className="p-6">No order ID provided.</p>
+export default function OrderStatusPage() {
+  const { id } = useParams(); // 👈 get order ID from URL
+  const orderId = id || "68f8e09d15299bc20f765b0b"; // fallback for testing
 
   return (
-    <main className="p-6 space-y-3">
-      <h1 className="text-2xl font-bold">Order Status</h1>
-      {status ? (
-        <>
-          <p>
-            Order <strong>{id}</strong> — 
-            <span className="font-semibold">{status.status}</span>
-          </p>
-          {status.status === "Shipped" && (
-            <p>Carrier: UPS · ETA 2-4 days</p>
-          )}
-          {status.status === "Delivered" && <p>Delivered ✔</p>}
-        </>
-      ) : (
-        <p>Loading status…</p>
-      )}
-    </main>
-  )
+    <div className="p-6">
+      <h1 className="text-2xl font-bold mb-4">Order Tracking</h1>
+      <OrderTracking orderId={orderId} />
+    </div>
+  );
 }

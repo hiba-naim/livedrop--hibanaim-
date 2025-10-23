@@ -1,12 +1,14 @@
-import React from "react"
-import { Outlet } from "react-router-dom"
-import Navbar from "./components/organisms/navbar"
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/organisms/navbar";
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <main className="pt-4">
+        <Outlet />
+      </main>
     </>
-  )
+  );
 }
